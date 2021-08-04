@@ -1,11 +1,11 @@
 
 import React, { useRef } from 'react';
 import './App.css';
-import { IconButton, makeStyles } from '@material-ui/core';
+import { IconButton } from '@material-ui/core';
 import { Menu, Search, AccountCircleOutlined, GTranslateOutlined, LoyaltyOutlined, TheatersOutlined } from '@material-ui/icons';
 import logo from './Assets/Images/disney-hotstar-logo-dark.svg'
 import Slider from './Components/Slider/Slider'
-import ContinueWatching from './Components/Continue-watching/Continue-watching';
+import RecentlyWatched from './Components/RecentlyWatched/Recently-watched';
 import ComedyMovies from './Components/Comedy-movies/Comedy-movies';
 function App() {
   const searchBoxEl = useRef({})
@@ -86,7 +86,7 @@ function App() {
         </div>
         <div className="content-container">
           <Slider />
-          <ContinueWatching />
+          <RecentlyWatched />
           <ComedyMovies />
         </div>
 

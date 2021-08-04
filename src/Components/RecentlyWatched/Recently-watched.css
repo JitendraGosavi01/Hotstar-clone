@@ -41,6 +41,7 @@
   display: inline-flex;
   flex-direction: column;
   transition: transform 0.3s;
+  cursor: pointer;
 }
 .tile > img {
   height: 163px;
@@ -95,4 +96,77 @@
 
 .tile-slide-controls .MuiSvgIcon-root {
   color: white;
+}
+
+.hover-info {
+  display: none;
+  position: absolute;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: s-small;
+  width: 280px;
+  /* margin-top: 83px; */
+  /* height: 100%; */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  background: linear-gradient(
+    0deg,
+    rgba(25, 33, 50, 1) 23%,
+    rgb(0 0 0 / 62%) 39%,
+    rgb(0 0 0 / 0%) 57%,
+    rgb(0 0 0 / 0%) 81%
+  );
+}
+
+.tile:hover .hover-info {
+  display: block;
+}
+
+.episode-number {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.episode-date {
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+.episode-info {
+  font-size: 13px;
+  line-height: normal;
+  height: 35px;
+  overflow: HIDDEN;
+}
+
+.episode-and-date {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: -25px;
+  margin-top: 63px;
+}
+.see-all-episodes {
+  font-size: 8px;
+  font-family: Roboto, HelveticaNeue-Light, sans-serif;
+  padding: 4px;
+  cursor: pointer;
+}
+.see-all-episodes:hover {
+  background-color: #343b4b;
+}
+
+.see-all-episodes .MuiSvgIcon-root {
+  font-size: 10px;
+}
+
+.remove {
+  margin-left: 98%;
+  margin-top: -2%;
+}
+
+.remove .MuiSvgIcon-root {
+  font-size: small;
 }
